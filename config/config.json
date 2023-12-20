@@ -1,0 +1,6 @@
+{
+  "allowBody": false,
+  "allowHeaders": false,
+  "allowMailForInterview": true,
+  "isProduction": false
+}

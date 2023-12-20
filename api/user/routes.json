@@ -1,0 +1,15 @@
+[  
+  {
+    "path": "/register",
+    "method": "post",
+    "action": "register.register",
+    "middlewares": [],
+    "pathFromRoot": false
+  },{
+    "path": "/login",
+    "method": "post",
+    "action": "login.login",
+    "middlewares": [],
+    "pathFromRoot": false
+  }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "path": "/addNote",
+        "method": "post",
+        "action": "addNote.addNote",
+        "middlewares": [],
+        "globalMiddlewares": [
+            "middleware.isSignedIn"
+        ],
+        "pathFromRoot": false
+    },{
+        "path": "/getAllNote",
+        "method": "get",
+        "action": "getAllNote.getAllNote",
+        "middlewares": [],
+        "globalMiddlewares": [
+            "middleware.isSignedIn"
+        ],
+        "pathFromRoot": false
+    },{
+        "path": "/editNote",
+        "method": "put",
+        "action": "editNote.editNote",
+        "middlewares": [],
+        "globalMiddlewares": [
+            "middleware.isSignedIn"
+        ],
+        "pathFromRoot": false
+    },{
+        "path": "/deleteNote",
+        "method": "delete",
+        "action": "deleteNote.deleteNote",
+        "middlewares": [],
+        "globalMiddlewares": [
+            "middleware.isSignedIn"
+        ],
+        "pathFromRoot": false
+    }
+]
