@@ -4,7 +4,7 @@ let User = require('../../../db/models/users');
 module.exports = {
     getUser : async(id) =>{
         try{
-            let user = await User.find({ _id : id });
+            let user = await User.findById(id);
             return user;
         }
         catch(err){
