@@ -11,5 +11,14 @@
     "action": "login.login",
     "middlewares": [],
     "pathFromRoot": false
+  },{
+    "path": "/getUser",
+    "method": "get",
+    "action": "getUser.getUser",
+    "middlewares": [],
+    "globalMiddlewares": [
+      "middleware.isSignedIn"
+    ],
+    "pathFromRoot": false
   }
 ]
