@@ -16,7 +16,9 @@ const path = require('path');
 const cors = require('cors');
 const session = require('express-session');
 
-
+app.get('/favico.ico', (req, res) => {
+    res.sendStatus(404);
+})
 
 
 
