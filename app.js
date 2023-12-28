@@ -89,6 +89,10 @@ app.get('/', (req, res) => {
     return APIResponseFormat._ResModifiedMessage(res, 200 , "Welcome to Note App Apis");
 })
 
+app.get('*', (req, res) => {
+    return APIResponseFormat._ResRouteNotFound(res, "Route Not Found");
+})
+
 //If no routes was matched show 404 not found error
 app.use((req, res, next) => {
     const error = new Error('Not Found');

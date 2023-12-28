@@ -91,6 +91,9 @@ const _ResModifiedMessage = (res, status, message) => {
     res.status(status).json(new APIResponseFormat(status, true, message));
 }
 
+const _ResRouteNotFound = (res, message) => {
+    res.status(404).json(new APIResponseFormat(404, false, message));
+}
 
 module.exports = {
     _ResMissingRequiredField,
@@ -113,7 +116,8 @@ module.exports = {
     _ResDataNotExists,
     _ResError,
     _ResNoRecordFound,
-    _ResModifiedMessage
+    _ResModifiedMessage,
+    _ResRouteNotFound
 }
 
 
