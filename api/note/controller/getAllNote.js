@@ -5,6 +5,7 @@ module.exports = {
         try{
 
             let allNote = await getAllNoteServices.getAllNote(req.user.id);
+            console.log(allNote);
             return APIResponseFormat._ResDataFound(res, "All notes", allNote);
         }
         catch(error){

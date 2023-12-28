@@ -20,6 +20,7 @@ module.exports = {
                 user : req.user.id
             }
             let addNote = await addNoteServices.addNoteService(noteObj);
+            console.log(addNote);
             return APIResponseFormat._ResDataCreated(res, "Note added successfully", addNote);
         }
         catch(error){

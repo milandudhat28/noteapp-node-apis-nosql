@@ -37,6 +37,7 @@ module.exports =  {
 
 
             let editNote = await editNoteServices.editNote({title, description, userId , noteId});
+            console.log(editNote);
             return APIResponseFormat._ResDataCreated(res, "Note updated successfully", editNote);
         }
         catch(error){
