@@ -29,6 +29,7 @@ module.exports = {
             if(!user){
                 return APIResponseFormat._ResInvalidCredentials(res);
             }
+            console.log(user);
             return APIResponseFormat._ResDataFound(res, "User logged in successfully", user);
         }
         catch(error){
